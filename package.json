@@ -1,0 +1,51 @@
+{
+   "name": "angular-webpack-boilerplate",
+   "version": "1.0.0",
+   "description": "Starter boilerplate for Angular 1.x using Webpack 4",
+   "private": true,
+   "browserslist": [
+      "> 2%"
+   ],
+   "scripts": {
+      "dev": "webpack -d --watch",
+      "prod": "webpack -p"
+   },
+   "author": "penholder",
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/penhold3r/angular-webpack-boilerplate.git"
+   },
+   "bugs": {
+      "url": "https://github.com/penhold3r/angular-webpack-boilerplate/issues"
+   },
+   "homepage": "https://github.com/penhold3r/angular-webpack-boilerplate#readme",
+   "license": "MIT",
+   "devDependencies": {
+      "autoprefixer": "^8.6.5",
+      "babel-core": "^6.26.3",
+      "babel-loader": "^7.1.5",
+      "babel-polyfill": "^6.26.0",
+      "babel-preset-env": "^1.7.0",
+      "css-loader": "^0.28.11",
+      "file-loader": "^1.1.11",
+      "html-loader": "^0.5.5",
+      "html-webpack-plugin": "^4.0.0-alpha",
+      "imagesloaded": "^4.1.4",
+      "mini-css-extract-plugin": "^0.4.1",
+      "node-libs-browser": "^2.1.0",
+      "node-sass": "^4.9.1",
+      "node-sass-glob-importer": "^5.1.3",
+      "postcss-loader": "^2.1.5",
+      "sanitize.css": "^5.0.0",
+      "sass-loader": "^7.0.3",
+      "url-loader": "^1.0.1",
+      "webpack": "^4.15.1",
+      "webpack-cli": "^2.1.5",
+      "whatwg-fetch": "^2.0.4"
+   },
+   "dependencies": {
+      "angular": "^1.7.2",
+      "hoek": "^5.0.3",
+      "materialize-css": "^1.0.0-rc.2"
+   }
+}

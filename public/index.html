@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>
+      <%= htmlWebpackPlugin.options.title %>
+   </title>
+<link href="./css/style.css" rel="stylesheet"></head>
+
+<body>
+
+   <main class="container" ng-app="App">
+
+      <div class="card" ng-controller="MainController">
+
+         <div class="card-image">
+            <img src="./images/angularjs-logo.png" alt="Angular JS">
+            <a class="btn-floating btn-large halfway-fab waves-effect waves-light red darken-3">
+               <img class="github-icon" src="./images/github-icon.svg" alt="Github">
+            </a>
+         </div>
+
+         <div class="card-content">
+
+            <h1 class="header blue-text text-darken-3">{{title}}</h1>
+            <div class="divider"></div>
+            <p class="flow-text blue-grey-text text-lighten-2">Starter boilerplate for Angular 1.x using Webpack 4</p>
+
+            <ul class="collection">
+               <li class="collection-item" ng-repeat="feature in features">
+                  <span>{{feature}}</span>
+                  <i class="material-icons red-text text-darken-3 secondary-content">check_circle_outline</i>
+               </li>
+            </ul>
+
+         </div>
+
+      </div>
+
+   </main>
+
+<script src="./js/bundle.js"></script></body>
+
+</html>
