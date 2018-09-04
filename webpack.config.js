@@ -2,9 +2,31 @@
 require('whatwg-fetch');
 //
 const path = require('path');
+const glob = require('glob');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const globImporter = require('node-sass-glob-importer');
+const globSassImporter = require('node-sass-glob-importer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+// INCLUDES
+const includeFiles = glob.sync('./src/includes/*.html');
+const includes = includeFiles.map(file =>
+   new HtmlWebpackPlugin({
+      filename: file.replace(/\.\/src\//g, ''),
+      template: file,
+      inject: false
+   })
+);
+
+// VIEWS
+const viewsFiles = glob.sync('./src/views/*.html');
+const views = viewsFiles.map(file =>
+   new HtmlWebpackPlugin({
+      filename: file.replace(/\.\/src\//g, ''),
+      template: file,
+      inject: false
+   })
+);
+
 //
 module.exports = {
    entry: ['whatwg-fetch', './src/scripts/index.js'],
@@ -43,7 +65,7 @@ module.exports = {
                {
                   loader: 'sass-loader',
                   options: {
-                     importer: globImporter()
+                     importer: globSassImporter()
                   }
                }
             ]
@@ -93,5 +115,5 @@ module.exports = {
          filename: 'index.html',
          template: './src/index.html'
       })
-   ]
+   ].concat(includes).concat(views)
 };

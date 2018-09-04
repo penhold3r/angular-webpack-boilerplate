@@ -1,7 +1,9 @@
 ## Materialize + Angular App
 Starter boilerplate for Angular 1.x using Webpack 4
 
-- HTML Webpack 
+- Includes
+- Routes
+- HTML Webpack Plugin
 - Sass support 
 - Images loader 
 - Custom Web Fonts
