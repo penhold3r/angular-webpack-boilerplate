@@ -4,7 +4,6 @@
 
 @import './dependencies/*.scss';
 
-
 @import '../fonts/roboto.css';
 @import '../fonts/material-icons.css';
 
@@ -12,19 +11,19 @@
 *                  GLOBAL STYLES
 ******************************************************/
 
-html, body {
-   overflow-x: hidden;
+html,
+body {
+	overflow-x: hidden;
 }
 
 body {
-	background: #EEE;
-   font: 18px 'roboto_condensedregular';
-   font-weight: 100;
+	background: #eee;
+	font-family: 'roboto_condensedregular';
+	font-weight: 100;
 
-   .material-icons {
-      width: 24px;
-   }
-   
+	.material-icons {
+		width: 24px;
+	}
 } // body
 
 /******************************************************

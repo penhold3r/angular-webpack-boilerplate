@@ -1,18 +1,18 @@
 /** --------------------------------------------------------
-*
-*  @file Angular App 
-*  @copyright 2018
-*  @author penholder designerd
-*  @version 1.0
-*
-*/
+ *
+ *  @file Angular App
+ *  @copyright 2018
+ *  @author penholder designerd
+ *  @version 1.2
+ *
+ */
 //--------------------------------------------------------
 // modules
-import M from 'materialize-css';
-import './modules/App';
+import M from 'materialize-css'
+import './modules/App'
 // styles
-import '../styles/index.scss';
-import 'materialize-css/sass/materialize.scss';
+import '../styles/index.scss'
+//import 'materialize-css/sass/materialize.scss'
 //--------------------------------------------------------
 //>>     DOM READY
 /**
@@ -20,17 +20,16 @@ import 'materialize-css/sass/materialize.scss';
  */
 //--------------------------------------------------------
 const domReady = callback => {
-   document.readyState === 'interactive' || document.readyState === 'complete'
-      ? callback()
-      : document.addEventListener('DOMContentLoaded', callback);
-};
+	document.readyState === 'interactive' || document.readyState === 'complete'
+		? callback()
+		: document.addEventListener('DOMContentLoaded', callback)
+}
 /**
  * @callback Main - callback function of domReady()
  */
 const Main = () => {
-
-   M.AutoInit();
-};
+	M.AutoInit()
+}
 //
-domReady(Main);
+domReady(Main)
 //--------------------------------------------------------

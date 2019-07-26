@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-   <meta charset="utf-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>
-      Angular App
-   </title>
-<link href="./css/style.css" rel="stylesheet"></head>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>
+         Angular JS App
+      </title>
+   <link href="./css/style.css" rel="stylesheet"></head>
 
-<body>
+   <body>
 
-   <main class="container" ng-app="App">
+      <main class="container" ng-app="App">
 
-      <nav class="red darken-3" ng-include="'./includes/nav-bar.html'"></nav>
+         <nav class="brand-secondary" ng-include="'./includes/nav-bar.html'"></nav>
 
-      <div class="content" ng-view></div>
+         <div class="content" ng-view></div>
 
-   </main>
+      </main>
 
-<script src="./js/bundle.js"></script></body>
+   <script src="./js/bundle.js"></script></body>
 
 </html>

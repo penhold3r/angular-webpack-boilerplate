@@ -1,40 +1,41 @@
-div[ng-controller="MainController"] {
-   overflow: hidden;
+div[ng-controller='MainController'] {
+	overflow: hidden;
 
-   .card-image {
-      background-color: $primary-color;
-      background: linear-gradient(145deg, $primary-color, lighten($primary-color, 15%));
-      
-      img {
-         padding: 45px;
-      }
+	.card-image {
+		background: linear-gradient(
+			145deg,
+			map-get($brand-primary, 'base'),
+			lighten(map-get($brand-primary, 'base'), 25%)
+		);
 
-      .btn-floating {
-         display: flex;
+		img {
+			padding: 45px;
+		}
 
-         .github-icon {
-            display: block;
-            margin: auto;
-            object-fit: contain;
-            padding: 0;
-            width: 50%;
-         }
-      }
-      
-   }
+		.btn-floating {
+			display: flex;
 
-   .card-content {
-      .header {
-         font-size: 3em;
-      }
+			.github-icon {
+				display: block;
+				margin: auto;
+				object-fit: contain;
+				padding: 0;
+				width: 50%;
+			}
+		}
+	}
 
-      .divider {
-         margin: 15px 0;
-      }
+	.card-content {
+		.header {
+			font-size: 3em;
+		}
 
-      .collection {
-         margin: 30px 0;
-      }
-   }
+		.divider {
+			margin: 15px 0;
+		}
 
+		.collection {
+			margin: 30px 0;
+		}
+	}
 }

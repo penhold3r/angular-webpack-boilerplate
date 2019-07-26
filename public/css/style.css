@@ -86,54 +86,6 @@
 /******************************************************
 *                  DEPENDENCIES
 ******************************************************/
-/******************************************************
-*                  GLOBAL STYLES
-******************************************************/
-html, body {
-  overflow-x: hidden; }
-
-body {
-  background: #EEE;
-  font: 18px 'roboto_condensedregular';
-  font-weight: 100; }
-  body .material-icons {
-    width: 24px; }
-
-/******************************************************
-*                    MODULES
-******************************************************/
-div[ng-controller="MainController"] {
-  overflow: hidden; }
-  div[ng-controller="MainController"] .card-image {
-    background-color: #1565c0;
-    background: linear-gradient(145deg, #1565c0, #388be9); }
-    div[ng-controller="MainController"] .card-image img {
-      padding: 45px; }
-    div[ng-controller="MainController"] .card-image .btn-floating {
-      display: flex; }
-      div[ng-controller="MainController"] .card-image .btn-floating .github-icon {
-        display: block;
-        margin: auto;
-        -o-object-fit: contain;
-           object-fit: contain;
-        padding: 0;
-        width: 50%; }
-  div[ng-controller="MainController"] .card-content .header {
-    font-size: 3em; }
-  div[ng-controller="MainController"] .card-content .divider {
-    margin: 15px 0; }
-  div[ng-controller="MainController"] .card-content .collection {
-    margin: 30px 0; }
-
-div[ng-controller="NavBar"] .brand-logo {
-  height: 100%;
-  padding: 10px;
-  width: 60px; }
-  div[ng-controller="NavBar"] .brand-logo img {
-    -o-object-fit: contain;
-       object-fit: contain;
-    width: 100%; }
-
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -1718,6 +1670,18 @@ div[ng-controller="NavBar"] .brand-logo {
 .grey-text.text-darken-4 {
   color: #212121 !important; }
 
+.brand-primary {
+  background-color: #1565c0 !important; }
+
+.brand-primary-text {
+  color: #1565c0 !important; }
+
+.brand-secondary {
+  background-color: #c62828 !important; }
+
+.brand-secondary-text {
+  color: #c62828 !important; }
+
 .black {
   background-color: #000000 !important; }
 
@@ -2198,7 +2162,7 @@ a {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid #ee6e73; }
+  border-left: 5px solid #1565c0; }
 
 i {
   line-height: inherit; }
@@ -2237,7 +2201,7 @@ video.responsive-video {
   .pagination li.active a {
     color: #fff; }
   .pagination li.active {
-    background-color: #ee6e73; }
+    background-color: #1565c0; }
   .pagination li.disabled a {
     cursor: default;
     color: #999; }
@@ -2430,7 +2394,7 @@ td, th {
     position: relative;
     /* sort out borders */ }
     table.responsive-table td:empty:before {
-      content: '\A0'; }
+      content: '\00a0'; }
     table.responsive-table th,
     table.responsive-table td {
       margin: 0;
@@ -2444,7 +2408,7 @@ td, th {
         display: block;
         padding: 0 10px 0 0; }
         table.responsive-table thead tr th::before {
-          content: "\A0"; }
+          content: "\00a0"; }
     table.responsive-table tbody {
       display: block;
       width: auto;
@@ -2531,7 +2495,7 @@ td, th {
 
 .secondary-content {
   float: right;
-  color: #26a69a; }
+  color: #c62828; }
 
 .collapsible .collection {
   margin: 0;
@@ -3280,7 +3244,7 @@ table span.badge {
 
 nav {
   color: #fff;
-  background-color: #ee6e73;
+  background-color: #1565c0;
   width: 100%;
   height: 56px;
   line-height: 56px; }
@@ -5257,8 +5221,8 @@ textarea {
   top: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid #26a69a;
-  background-color: #26a69a;
+  border: 2px solid #c62828;
+  background-color: #c62828;
   z-index: 0; }
 
 [type="checkbox"].filled-in.tabbed:focus + span:not(.lever):after {
@@ -5268,8 +5232,8 @@ textarea {
 
 [type="checkbox"].filled-in.tabbed:checked:focus + span:not(.lever):after {
   border-radius: 2px;
-  background-color: #26a69a;
-  border-color: #26a69a; }
+  background-color: #c62828;
+  border-color: #c62828; }
 
 [type="checkbox"].filled-in:disabled:not(:checked) + span:not(.lever):before {
   background-color: transparent;
@@ -5649,11 +5613,11 @@ input[type=range]::-ms-thumb {
   .table-of-contents a:hover {
     color: #a8a8a8;
     padding-left: 15px;
-    border-left: 1px solid #ee6e73; }
+    border-left: 1px solid #1565c0; }
   .table-of-contents a.active {
     font-weight: 500;
     padding-left: 14px;
-    border-left: 2px solid #ee6e73; }
+    border-left: 2px solid #1565c0; }
 
 .sidenav {
   position: fixed;
@@ -5787,7 +5751,7 @@ input[type=range]::-ms-thumb {
 
 .sidenav .collapsible-body > ul:not(.collapsible) > li.active,
 .sidenav.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active {
-  background-color: #ee6e73; }
+  background-color: #1565c0; }
   .sidenav .collapsible-body > ul:not(.collapsible) > li.active a,
   .sidenav.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active a {
     color: #fff; }
@@ -6224,7 +6188,7 @@ input[type=range]::-ms-thumb {
   position: absolute;
   font-size: 1rem;
   border-radius: 50%;
-  background-color: #ee6e73;
+  background-color: #1565c0;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.14), 0 10px 50px 0 rgba(0, 0, 0, 0.12), 0 30px 10px -20px rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
@@ -6338,7 +6302,7 @@ input[type=range]::-ms-thumb {
 /* Date Display */
 .datepicker-date-display {
   flex: 1 auto;
-  background-color: #26a69a;
+  background-color: #c62828;
   color: #fff;
   padding: 20px 22px;
   font-weight: 500; }
@@ -6375,9 +6339,9 @@ input[type=range]::-ms-thumb {
     border-radius: 50%;
     padding: 0; }
     .datepicker-table td.is-today {
-      color: #26a69a; }
+      color: #c62828; }
     .datepicker-table td.is-selected {
-      background-color: #26a69a;
+      background-color: #c62828;
       color: #fff; }
     .datepicker-table td.is-outside-current-month, .datepicker-table td.is-disabled {
       color: rgba(0, 0, 0, 0.3);
@@ -6408,7 +6372,7 @@ input[type=range]::-ms-thumb {
 .datepicker-clear,
 .datepicker-today,
 .datepicker-done {
-  color: #26a69a;
+  color: #c62828;
   padding: 0 1rem; }
 
 .datepicker-clear {
@@ -6445,7 +6409,7 @@ input[type=range]::-ms-thumb {
 /* Clock Digital Display */
 .timepicker-digital-display {
   flex: 1 auto;
-  background-color: #26a69a;
+  background-color: #c62828;
   padding: 10px;
   font-weight: 300; }
 
@@ -6522,7 +6486,7 @@ input[type=range]::-ms-thumb {
 
 .timepicker-tick.active,
 .timepicker-tick:hover {
-  background-color: rgba(38, 166, 154, 0.25); }
+  background-color: rgba(198, 40, 40, 0.25); }
 
 .timepicker-dial {
   transition: transform 350ms, opacity 350ms; }
@@ -6537,7 +6501,7 @@ input[type=range]::-ms-thumb {
 .timepicker-canvas {
   transition: opacity 175ms; }
   .timepicker-canvas line {
-    stroke: #26a69a;
+    stroke: #c62828;
     stroke-width: 4;
     stroke-linecap: round; }
 
@@ -6546,11 +6510,11 @@ input[type=range]::-ms-thumb {
 
 .timepicker-canvas-bearing {
   stroke: none;
-  fill: #26a69a; }
+  fill: #c62828; }
 
 .timepicker-canvas-bg {
   stroke: none;
-  fill: #26a69a; }
+  fill: #c62828; }
 
 /* Footer */
 .timepicker-footer {
@@ -6563,7 +6527,7 @@ input[type=range]::-ms-thumb {
   color: #F44336; }
 
 .timepicker-close {
-  color: #26a69a; }
+  color: #c62828; }
 
 .timepicker-clear,
 .timepicker-close {
@@ -6583,4 +6547,52 @@ input[type=range]::-ms-thumb {
     bottom: auto;
     text-align: center;
     margin-top: 1.2rem; } }
+
+/******************************************************
+*                  GLOBAL STYLES
+******************************************************/
+html,
+body {
+  overflow-x: hidden; }
+
+body {
+  background: #eee;
+  font-family: 'roboto_condensedregular';
+  font-weight: 100; }
+  body .material-icons {
+    width: 24px; }
+
+/******************************************************
+*                    MODULES
+******************************************************/
+div[ng-controller='MainController'] {
+  overflow: hidden; }
+  div[ng-controller='MainController'] .card-image {
+    background: linear-gradient(145deg, #1565c0, #66a6ee); }
+    div[ng-controller='MainController'] .card-image img {
+      padding: 45px; }
+    div[ng-controller='MainController'] .card-image .btn-floating {
+      display: flex; }
+      div[ng-controller='MainController'] .card-image .btn-floating .github-icon {
+        display: block;
+        margin: auto;
+        -o-object-fit: contain;
+           object-fit: contain;
+        padding: 0;
+        width: 50%; }
+  div[ng-controller='MainController'] .card-content .header {
+    font-size: 3em; }
+  div[ng-controller='MainController'] .card-content .divider {
+    margin: 15px 0; }
+  div[ng-controller='MainController'] .card-content .collection {
+    margin: 30px 0; }
+
+div[ng-controller="NavBar"] .brand-logo {
+  height: 100%;
+  padding: 10px;
+  width: 60px; }
+  div[ng-controller="NavBar"] .brand-logo img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%; }
 

@@ -1,26 +1,24 @@
-import logo from '../../../images/angular-logo.svg';
+import logo from '../../../images/angular-logo.svg'
 
-const controller = $scope => {
+const NavBarController = $scope => {
+	$scope.brand = logo
 
-   $scope.brand = logo;
+	$scope.links = [
+		{
+			text: 'Home',
+			url: './'
+		},
+		{
+			text: 'Features',
+			url: './#!/features'
+		}
+	]
 
-   $scope.links = [
-      {
-         text: 'Home',
-         url: './'
-      },
-      {
-         text: 'Features',
-         url: './#!/features'
-      }
-   ]
-
-   $scope.navigate = ($event, link) => {
-      console.log($event.currentTarget, link);
-   }
-
+	$scope.navigate = ($event, link) => {
+		console.log($event.currentTarget, link)
+	}
 }
 
-const NavBar = ['$scope', controller];
+const NavBar = ['$scope', NavBarController]
 
-export default NavBar;
+export default NavBar
