@@ -2,7 +2,7 @@
 *                  DEPENDENCIES
 ******************************************************/
 
-@import './dependencies/*.scss';
+@import './includes/*.scss';
 
 @import '../fonts/roboto.css';
 @import '../fonts/material-icons.css';
@@ -30,4 +30,4 @@ body {
 *                    MODULES
 ******************************************************/
 
-@import './modules/*.scss';
+@import './components/*.scss';

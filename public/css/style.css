@@ -6565,33 +6565,33 @@ body {
 /******************************************************
 *                    MODULES
 ******************************************************/
-div[ng-controller='MainController'] {
+.home {
   overflow: hidden; }
-  div[ng-controller='MainController'] .card-image {
+  .home .card-image {
     background: linear-gradient(145deg, #1565c0, #66a6ee); }
-    div[ng-controller='MainController'] .card-image img {
+    .home .card-image img {
       padding: 45px; }
-    div[ng-controller='MainController'] .card-image .btn-floating {
+    .home .card-image .btn-floating {
       display: flex; }
-      div[ng-controller='MainController'] .card-image .btn-floating .github-icon {
+      .home .card-image .btn-floating .github-icon {
         display: block;
         margin: auto;
         -o-object-fit: contain;
            object-fit: contain;
         padding: 0;
         width: 50%; }
-  div[ng-controller='MainController'] .card-content .header {
+  .home .card-content .header {
     font-size: 3em; }
-  div[ng-controller='MainController'] .card-content .divider {
+  .home .card-content .divider {
     margin: 15px 0; }
-  div[ng-controller='MainController'] .card-content .collection {
+  .home .card-content .collection {
     margin: 30px 0; }
 
-div[ng-controller="NavBar"] .brand-logo {
+.main-nav .brand-logo {
   height: 100%;
   padding: 10px;
   width: 60px; }
-  div[ng-controller="NavBar"] .brand-logo img {
+  .main-nav .brand-logo img {
     -o-object-fit: contain;
        object-fit: contain;
     width: 100%; }

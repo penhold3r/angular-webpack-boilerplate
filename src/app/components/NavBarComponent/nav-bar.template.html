@@ -1,0 +1,25 @@
+<nav class="brand-secondary main-nav">
+   <div class="nav-wrapper">
+
+      <a href="#" class="brand-logo">
+         <img ng-src="{{brand}}" alt="Angular">
+      </a>
+
+      <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+         <i class="material-icons">menu</i>
+      </a>
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+         <li ng-repeat="link in links">
+            <a href="{{link.url}}" class="sidenav-close">{{link.text}}</a>
+         </li>
+      </ul>
+
+      <ul id="mobile-nav" class="sidenav" style="z-index: 99">
+         <li ng-repeat="link in links">
+            <a href="{{link.url}}" class="sidenav-close">{{link.text}}</a>
+         </li>
+      </ul>
+
+   </div>
+</nav>

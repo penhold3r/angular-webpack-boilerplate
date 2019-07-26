@@ -44,8 +44,8 @@
 		"whatwg-fetch": "^2.0.4"
 	},
 	"dependencies": {
-		"angular-route": "^1.7.2",
 		"angular": "^1.7.2",
+		"angular-route": "^1.7.2",
 		"materialize-css": "^1.0.0-rc.2"
 	}
 }

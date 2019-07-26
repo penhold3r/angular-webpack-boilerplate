@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="App" ng-controller="AppController" lang="{{lang}}">
 
    <head>
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="{{description}}">
       <title>
-         Angular JS App
+         {{title}}
       </title>
    <link href="./css/style.css" rel="stylesheet"></head>
 
    <body>
 
-      <main class="container" ng-app="App">
+      <main class="container">
 
-         <nav class="brand-secondary" ng-include="'./includes/nav-bar.html'"></nav>
+         <nav-bar></nav-bar>
 
          <div class="content" ng-view></div>
 
